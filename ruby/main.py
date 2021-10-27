@@ -2,4 +2,4 @@
 
 from scrapy.cmdline import execute
 
-execute("scrapy crawl 58".split())
+execute("scrapy crawl proxy_ip".split())

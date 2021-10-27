@@ -1,12 +1,15 @@
-# Scrapy settings for ruby project
-#
-# For simplicity, this file contains only settings considered important or
-# commonly used. You can find more settings consulting the documentation:
-#
-#     https://docs.scrapy.org/en/latest/topics/settings.html
-#     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-#     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-
+# -*- coding: utf-8 -*-
+"""
+-------------------------------------------------
+   File Name：     setting.py
+   Description :   配置文件
+   Author :        Edwin
+   date：          2021/10/27
+-------------------------------------------------
+   Change Activity:
+                   2021/10/27:
+-------------------------------------------------
+"""
 BOT_NAME = 'ruby'
 
 SPIDER_MODULES = ['ruby.spiders']
@@ -50,9 +53,9 @@ ROBOTSTXT_OBEY = False
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'ruby.middlewares.RubyDownloaderMiddleware': 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+   'ruby.middlewares.RubyDownloaderMiddleware': 543,
+}
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html

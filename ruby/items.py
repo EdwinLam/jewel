@@ -30,3 +30,25 @@ class House(Item):
     address = Field()
     url = Field()
 
+
+class IpProxy(Item):
+    # define the fields for your item here like:
+    table = 'jewel_proxy_ip'
+    id = Field()
+    ip = Field()
+    port = Field()
+    # 匿名度
+    anons = Field()
+    # 类型：http/https
+    schema = Field()
+    # 国家
+    country = Field()
+    country_img = Field()
+    province = Field()
+    isp = Field()
+    # 位置
+    position = Field()
+    # 响应速度
+    speed = Field()
+    # 最后验证时间
+    verify_time = Field()
